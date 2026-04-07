@@ -22,5 +22,5 @@
 * Clone or download the repository.  (git clone https://github.com/desireedagondon000-gif/to-do-app.git
 * Open the folder in VS Code (or any code editor).
 * Use Live Server (VS Code extension) to launch the app in your browser.
-* Right-click todo.html → “Open with Live Server”
+* Right-click todo.html and “Open with Live Server”
 * Start adding tasks and managing their status!
