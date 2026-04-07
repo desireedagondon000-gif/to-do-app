@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanban To-Do App</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Kanban To-Do App</h1>
+
+    <!-- Input -->
+    <div class="task-input">
+        <input type="text" id="new-task" placeholder="Add a new task...">
+        <button id="add-btn"><i class="fas fa-plus"></i> Add</button>
+    </div>
+
+    <!-- Counters -->
+    <div class="counters">
+        <span id="pending-count">Pending: 0</span> | 
+        <span id="inprogress-count">In Progress: 0</span> | 
+        <span id="completed-count">Completed: 0</span>
+    </div>
+
+    <!-- Kanban columns -->
+    <div class="kanban">
+        <div class="column" id="pending-column">
+            <h2>Pending <button class="download-btn" data-status="pending"><i class="fas fa-download"></i></button></h2>
+            <ul class="task-list" id="pending-list"></ul>
+        </div>
+
+        <div class="column" id="inprogress-column">
+            <h2>In Progress <button class="download-btn" data-status="inprogress"><i class="fas fa-download"></i></button></h2>
+            <ul class="task-list" id="inprogress-list"></ul>
+        </div>
+
+        <div class="column" id="completed-column">
+            <h2>Completed <button class="download-btn" data-status="completed"><i class="fas fa-download"></i></button></h2>
+            <ul class="task-list" id="completed-list"></ul>
+        </div>
+    </div>
+
+    <!-- Delete Modal -->
+    <div id="delete-modal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to delete this task?</p>
+            <div class="modal-buttons">
+                <button id="confirm-delete">Yes</button>
+                <button id="cancel-delete">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
