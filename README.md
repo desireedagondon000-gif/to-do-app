@@ -18,9 +18,7 @@
 
 ![Kanban To-Do Board](images/kanban_todo.png)
 
-# How to Run
-* Clone or download the repository.  (git clone https://github.com/desireedagondon000-gif/to-do-app.git
-* Open the folder in VS Code (or any code editor).
-* Use Live Server (VS Code extension) to launch the app in your browser.
-* Right-click todo.html and “Open with Live Server”
-* Start adding tasks and managing their status!
+- Open the folder in VS Code
+- Install the Live Server extension if you haven’t already
+- Right-click index.html and then choose “Open with Live Server”, or just click the "Go Live" button on the bottom half of the screen in vscode
+- Your app will open in a browser and auto-refresh on changes
